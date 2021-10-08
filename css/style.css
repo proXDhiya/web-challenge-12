@@ -125,7 +125,7 @@ h4 {
     border: .5px solid var(--White);
 }
 
-/**/
+/*profile content*/
 .card div > div > div {
     display: inline-block;
     position: absolute;
@@ -136,3 +136,7 @@ h4 {
 :is(#box-num-3, #box-num-5) {
     color: var(--Very-dark-blackish-blue);
 }
+
+:is(#box-num-3, #box-num-5) p {
+    color: var(--Very-dark-grayish-blue);
+} 
