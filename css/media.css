@@ -105,10 +105,6 @@
         --font-size: 10px;
     }
 
-    body {
-        height: calc(100vh + 50px);
-    }
-
     section {
         width: 500px;
         height: 800px;
@@ -118,9 +114,6 @@
 
 /*smart phone*/
 @media only screen and (max-width: 480px) {
-    :root {
-        --font-size: 9px;
-    }
 
     section {
         width: calc(100% - 30px);
