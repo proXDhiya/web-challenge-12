@@ -1,3 +1,4 @@
+/*normal screen*/
 @media only screen and (max-width: 1200px) {
     :root {
         --font-size: 12px;
@@ -46,6 +47,8 @@
     }
 }
 
+
+/*small screen && big tablate*/
 @media only screen and (max-width: 1024px) {
     :root {
         --font-size: 11px;
@@ -95,17 +98,59 @@
     }
 }
 
+
+/*mini tablate*/
 @media only screen and (max-width: 768px) {
     :root {
         --font-size: 10px;
     }
 
+    body {
+        width: 100%;
+        height: calc(100% + 100px);
+    }
+
     section {
-        width: 620px;
-        height: 750px;
+        width: 500px;
+        height: 800px;
     }
 }
 
+
+/*smart phone*/
 @media only screen and (max-width: 480px) {
-    
+    :root {
+        --font-size: 9px;
+    }
+
+    section {
+        width: calc(100% - 30px);
+        height: 1050px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.75fr 1.25fr 1.25fr 1.75fr 1.75fr;
+    }
+
+    :is(#box-num-1, #box-num-2, #box-num-3, #box-num-4, #box-num-5) {
+        grid-column: 1 / 2;
+    }
+
+    #box-num-1 {
+        grid-row: 1 / 2;
+    }
+
+    #box-num-2 {
+        grid-row: 2 / 3;
+    }
+
+    #box-num-3 {
+        grid-row: 3 / 4;
+    }
+
+    #box-num-4 {
+        grid-row: 4 / 5;
+    }
+
+    #box-num-5 {
+        grid-row: 5 / 6;
+    }
 }
